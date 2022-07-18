@@ -20,12 +20,12 @@ const [isOnline, setIsOnline] = useState(true);
 useEffect(() => {
   
   
-  // online
+  // onlinee
   function toggleOnline(){
     setIsOnline(true);
   }
 
-  // offline
+  // offlinee
   function toggleOffline(){
     setIsOnline(false);
   }
