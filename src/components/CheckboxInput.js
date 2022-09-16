@@ -4,29 +4,24 @@ export default function CheckboxInput({
   onCheckboxChange = null,
   id = 'id_do_input_checkbox',
   autoFocus = false,
-}){
-
-  function handleInputChange(){
-    if (onCheckboxChange){
-      
+}) {
+  function handleInputChange() {
+    if (onCheckboxChange) {
       onCheckboxChange();
-
     }
   }
 
-
-  return(
+  return (
     <div className="flex flex-row items-center space-x-2 my-4">
-     
-      <input 
-        autoFocus = {autoFocus}
-        id={id} 
-        type="checkbox" 
+      <input
+        autoFocus={autoFocus}
+        id={id}
+        type="checkbox"
         className="border p-1"
-        value={inputValue} 
+        value={inputValue}
         onChange={handleInputChange}
       />
-      <label className='text-sm mb-1' htmlFor={id}>
+      <label className="text-sm mb-1" htmlFor={id}>
         {labelDescription}
       </label>
     </div>
